@@ -1,0 +1,449 @@
+    <!doctype html>
+    <html lang="en">
+    <head>
+        <title>Big Boba</title>
+
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <!-- Fuente -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous">
+
+        <link rel="stylesheet" href="assets/css/styles.css">
+    </head>
+
+    <body>
+
+        <!-- NAVBAR -->
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid t-pink">
+                <a class="navbar-brand" href="#">
+                    <img src="assets/img/logo-a.png" width="100px">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto t-pink">
+                        <li class="nav-item "><a class="nav-link active fs-4 t-pink" href="#">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4 t-pink" href="#">Carta</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4 t-pink" href="#">Sucursales</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4 t-pink" aria-disabled="true">Horarios</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!--  HEADER CON IMAGEN -->
+        <header>
+            <div class="position-relative">
+                <img src="assets/img/fondo.jpg" class="img-fluid object-fit-cover w-100 blurred" style="height: 90vh; filter: blur(5px)" alt="Fondo">
+
+                <div class="position-absolute top-0 start-0 w-100 h-100 d-flex justify-content-center align-items-center"
+                    style="background: rgba(0,0,0,0.4);">
+
+                    <h1 class="fw-bold text-center display-1 border-5 p-3 bg-light rounded-3">
+                        BIGBOBA
+                    </h1>
+                </div>
+            </div>
+        </header>
+        <main class="bg-lateral">
+            <!-- MARQUEE -->
+            <div class="marquee bg-pink border-0 p-1 pt-4">
+                <p class="fs-1 text-light bg-pink fst-italic text-uppercase">
+                    Promociones ✦ Bobas deliciosas ✦ Atención rápida ✦ Más sorpresas pronto!
+                </p>
+            </div>
+
+            <!-- CARRUSEL DE TARJETAS -->
+            <h2 id="carta" class="text-center my-4 display-5 fw-normal t-pink">Nuestros capybobbas</h2>
+
+            <div id="carouselExampleControls" class="carousel slide container-carta" data-bs-ride="carousel">
+                <div class="carousel-inner">
+
+                    <!-- ITEM 1 -->
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center g-4 p-4">
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb1.png" class="card-img-top" alt="..." 
+                                    data-bs-toggle="popover" data-bs-title="Ingredientes" 
+                                    data-bs-content="Lorem ipsum dolor sit amet...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">Thai Boba tea</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb2.png" class="card-img-top" alt="..."
+                                    data-bs-toggle="popover" data-bs-title="Ingredientes" data-bs-content="Lorem ipsum...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">Tarisimo</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb3.png" class="card-img-top" alt="..."
+                                    data-bs-toggle="popover" data-bs-title="Ingredientes" data-bs-content="Lorem ipsum...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">MatchaBobba</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ITEM 2 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4 p-4">
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb4.png" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">Pie de limon</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb5.png" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">Cocoa Beach</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb6.png" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">Prestigio</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- ITEM 3 -->
+                    <div class="carousel-item">
+                        <div class="row justify-content-center g-4 p-4">
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb7.png" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">Chocomora</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb8.png" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">Mokka</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-10 col-sm-6 col-md-4 col-lg-3">
+                                <div class="card h-100">
+                                    <img src="/dia 8/ejemplo 1/assets/img/bobb9.png" class="card-img-top" alt="...">
+                                    <div class="card-body text-center">
+                                        <h5 class="card-title fs-3 t-pink">MatchaIntense</h5>
+                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Controles -->
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+
+                <!-- SUCURSALES -->
+            <div >
+                <section class="container ">
+                    <h2 class="text-center my-5 display-5 fw-normal t-pink">Sucursales</h2>
+                    <div class="row gap-5 justify-content-evenly"> 
+                        <div class="card col-10 col-sm-10 col-md-5 col-lg-3 col p-0 text-center align-items-center  " style="width: 18rem;">
+                            <img src="/dia 8/ejemplo 1/assets/img/tienda1.png" class="card-img-top object-fit-cover " alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-3 t-pink">Mall Plaza Vespucio</h5>
+                                <p class="card-text p-3 t-pink">La florida local 406 </p>
+                                <a href="#" class="btn p-3 bg-green btn-outline-success">Ver detalles de la tienda</a>
+                            </div>
+                        </div>
+                        <div class="card col-10 col-sm-10 col-md-5 col-lg-3 col p-0 text-center" style="width: 18rem;">
+                            <img src="/dia 8/ejemplo 1/assets/img/tienda2.png" class="card-img-top  object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-3 t-pink">Mall Costanera Center</h5>
+                                <p class="card-text p-3 t-pink">5109  Providencia.</p>
+                                <a href="#" class="btn p-3 bg-green btn-outline-success">Ver detalles de la tienda</a>
+                            </div>
+                        </div>
+                        <div class="card col-10 col-sm-10 col-md-5 col-lg-3 col p-0 text-center" style="width: 18rem;">
+                            <img src="/dia 8/ejemplo 1/assets/img/tienda3.png" class="card-img-top  object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-3 t-pink">Mall Parque Arauco</h5>
+                                <p class="card-text p-3 t-pink">Av. Pdte. Kennedy 5413</p>
+                                <a href="#" class="btn p-3 bg-green btn-outline-success">Ver detalles de la tienda</a>
+                            </div>
+                        </div>
+                        <div class="card col-10 col-sm-10 col-md-5 col-lg-3 col p-0 text-center" style="width: 18rem;">
+                            <img src="/dia 8/ejemplo 1/assets/img/tienda4.png" class="card-img-top  object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-3 t-pink">Mall Plaza Oeste</h5>
+                                <p class="card-text p-3 t-pink">Américo Vespucio 1501</p>
+                                <a href="#" class="btn p-3 bg-green btn-outline-success">Ver detalles de la tienda</a>
+                            </div>
+                        </div>
+                        <div class="card col-10 col-sm-10 col-md-5 col-lg-3 col p-0 text-center object-fit-cover " style="width: 18rem;">
+                            <img src="/dia 8/ejemplo 1/assets/img/tienda5.png" class="card-img-top  object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-3 t-pink">Portal Lyon</h5>
+                                <p class="card-text p-3  t-pink">Nueva de Lyon 026</p>
+                                <a href="#" class="btn p-3 bg-green btn-outline-success ">Ver detalles de la tienda</a>
+                            </div>
+                        </div>
+                        <div class="card col-10 col-sm-10 col-md-5 col-lg-3 col p-0 text-center border-5 align-content-between" style="width: 18rem;">
+                            <img src="/dia 8/ejemplo 1/assets/img/tienda6.png" class="card-img-top  object-fit-cover" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title p-3 t-pink">Manuel Montt</h5>
+                                <p class="card-text p-3 t-pink">221 Providencia.</p>
+                                <a href="#" class="btn p-3 bg-green btn-outline-success ">Ver detalles de la tienda</a>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+                <section class="bg-green d-none d-lg-block py-5 mt-5 b-0">
+                    <div class="d-flex justify-content-evenly w-100">
+                        <h2 class="display-5 fw-medium ">Medios de pago</h2>
+                        <div class="d-flex gap-5">
+                            <i class="fa-brands fa-cc-mastercard fa-4x"></i>
+                            <i class="fa-brands fa-cc-visa fa-4x"></i>
+                            <i class="fa-solid fa-money-bill fa-4x"></i>
+                            <i class="fa-solid fa-mobile-retro fa-4x"></i>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="align-content-between">
+                    <div class="container my-5">
+                        <div class="row justify-content-between align-items-center gy-5">
+
+                            <!-- COLUMNA DEL HORARIO -->
+                            <div class="col-12 col-md-6">
+                                <div class="card bord text-center border-0 p-4">
+
+                                    <!-- Título responsivo -->
+                                    <h3 class="t-pink fs-2 fs-md-3 fs-lg-1 mb-4">
+                                        Horario de Atención
+                                    </h3>
+
+                                    <ul class="list-group p-2">
+
+                                        <!-- Cada item con texto responsivo -->
+                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Lunes
+                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        </li>
+
+                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Martes
+                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        </li>
+
+                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Miércoles
+                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        </li>
+
+                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Jueves
+                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        </li>
+
+                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Viernes
+                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        </li>
+
+                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Sábado
+                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">10:00 – 01:00</span>
+                                        </li>
+
+                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Domingo
+                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">10:00 – 18:00</span>
+                                        </li>
+
+                                    </ul>
+
+                                    <!-- Botón responsivo -->
+                                    <button type="button" class="btn p-2 p-md-3 fs-6 fs-md-5 bg-green btn-outline-success mt-3"
+                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                        Reserva tu hora
+                                    </button>
+
+                                </div>
+                            </div>
+
+                            <!-- IMAGEN -->
+                            <div class="d-none d-lg-block col-lg-6 text-center">
+                                <img 
+                                    src="/dia 8/ejemplo 1/assets/img/capibara a.png" 
+                                    alt="Capibara"
+                                    class="img-fluid"
+                                    style="max-height:700px;"
+                                >
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h1 class="modal-title fs-5 t-pink" id="exampleModalLabel">Reservar</h1>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body p-5">
+                                <div class="row">
+                                    <label for="exampleFormControlInput1" class="form-label t-pink">Nombre</label>
+                                    <div class="col">
+                                    <input type="text" class="form-control" placeholder="Nombre" aria-label="First name">
+                                    </div>
+                                    <div class="col">
+                                    <input type="text" class="form-control" placeholder="Apellido" aria-label="Last name">
+                                </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlInput1" class="form-label t-pink">Email</label>
+                                    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@ejemplo.com">
+                                </div>
+                                <div class="row">
+                                    <label for="fecha" class="form-label t-pink">Fecha de Reserva</label>
+                                    <div class="mb-3 col">
+                                        <input type="date" id="fecha" class="form-control" required>
+                                    </div>
+                                    <div class="mb-3 col">
+                                        <input type="time" id="hora" class="form-control t-pink" required>
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleFormControlTextarea1" class="form-label t-pink">Comentarios</label>
+                                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                </div>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn bg-green btn-outline-success ">Enviar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        
+
+
+                
+        </main>
+        <footer class="bg-pink text-dark py-5 small-footer">
+            <div class="container">
+                
+                <div class="row text-center text-md-start gy-5 justify-content-between">
+
+                    <!-- LOGO -->
+                    <div class="d-none d-lg-block col-lg-3 d-flex justify-content-center justify-content-md-start">
+                        <img height="150" src="/dia 8/ejemplo 1/assets/img/logo-a.png" alt="">
+                    </div>
+
+                    <!-- TRABAJA CON NOSOTROS -->
+                    <div class=" d-none d-md-block col-md-3">
+                        <h5 class="fs-5">¡Trabaja con nosotros!</h5>
+                        <button type="button" class="btn btn-light t-pink fs-5 mt-2">Postula aquí!</button>
+                    </div>
+
+                    <!-- CONTACTO -->
+                    <div class="col-12 col-md-4">
+                        <h5 class="mb-3 fs-5">Contacto y Ubicación</h5>
+                        <p class="fs-6"><strong>Bobba Bombbini</strong></p>
+                        <p class="fs-6"><i class="fa-solid fa-phone me-2"></i> +569 64982818</p>
+                        <p class="fs-6"><i class="fa-solid fa-envelope me-2"></i> Bombbini@gmail.com</p>
+                        <p class="fs-6"><i class="fa-solid fa-location-dot me-2"></i> Calle falsa 123, Ciudad.</p>
+                    </div>
+
+                    <!-- REDES SOCIALES -->
+                    <div class="col-12 col-md-2">
+                        <h5 class="mb-3 fs-6">Desarrollado por curso 0044</h5>
+                        <div class="d-flex justify-content-center justify-content-md-start gap-3">
+                            <p><i class="fa-brands fa-instagram fa-2x"></i></p>
+                            <p><i class="fa-brands fa-linkedin fa-2x"></i></p>
+                            <p><i class="fa-solid fa-envelope fa-2x"></i></p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </footer>
+
+        <button id="btnTop" class=" rounded-circle shadow-lg bg-pink text-light">
+            ↑
+        </button>
+        
+
+        <!-- SCRIPTS -->
+        <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+        <script src="https://kit.fontawesome.com/7b38ae3f22.js" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+
+        <script src="assets/js/script.js"></script>
+    </body>
+    </html>
