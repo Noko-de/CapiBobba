@@ -1,8 +1,10 @@
-/* ===========================
-   FUENTE Y COLORES GENERALES
-   =========================== */
+/* FUENTE Y COLORES GENERALES */
 body {
     font-family: 'Poppins', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 .gb-semi {
@@ -17,11 +19,6 @@ body {
     background-color: #87eb72;
 }
 
-.t-pink {
-    color: #ff23bd;
-}
-
-/* Gradiente lateral */
 .bg-lateral {
     background: linear-gradient(to right,
         rgba(255,0,200,0.4) 0%,
@@ -38,6 +35,11 @@ body {
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
 }
+.t-pink {
+    color: #ff23bd;
+}
+
+
 
 /* MARQUEE ANIMADO */
 .marquee {
@@ -124,12 +126,13 @@ body {
 
 .carousel-control-prev,
 .carousel-control-next {
-    background-color: #e1e1e1;
-    width: 5vh;
-    height: 5vh;
+    background-color: #ff23bd;
+    width: 9vh;
+    height: 9vh;
     border-radius: 50%;
-    top: 50%;
+    top: 35%;
     transform: translateY(-50%);
+    margin: 70px;
 }
 
 /* RESPONSIVE */
@@ -155,18 +158,22 @@ body {
     }
 }
 
+/*  BOTON TOP */
 
 #btnTop {
     position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
+    bottom: 0;
+    right: 40px;
+    width: 100px;
+    height: auto;
+    cursor: pointer;
     display: none;
-    align-items: center;
-    justify-content: center;
-    font-size: 22px;
     z-index: 9999;
-    text-transform: bold;
-    
+
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#btnTop:hover {
+    transform: scale(1.15);
+    opacity: 0.85;
 }

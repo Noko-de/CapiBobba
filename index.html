@@ -23,10 +23,10 @@
     <body>
 
         <!-- NAVBAR -->
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
             <div class="container-fluid t-pink">
                 <a class="navbar-brand" href="#">
-                    <img src="assets/img/logo-a.png" width="100px">
+                    <img class="mx-3" src="assets/img/logo-a.png" width="100px">
                 </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
@@ -35,17 +35,26 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav ms-auto t-pink">
-                        <li class="nav-item "><a class="nav-link active fs-4 t-pink" href="#">Home</a></li>
-                        <li class="nav-item"><a class="nav-link fs-4 t-pink" href="#">Carta</a></li>
-                        <li class="nav-item"><a class="nav-link fs-4 t-pink" href="#">Sucursales</a></li>
-                        <li class="nav-item"><a class="nav-link fs-4 t-pink" aria-disabled="true">Horarios</a></li>
+                        <li class="nav-item "><a class="nav-link active fs-4 t-pink" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4 t-pink" href="#bobbas">bobbas</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4 t-pink" href="#sucursales">Sucursales</a></li>
+                        <li class="nav-item"><a class="nav-link fs-4 t-pink" href="#horarios">Horarios</a></li>
+                        <button class="btn position-relative bg-green btn-outline-success ms-3"
+                        data-bs-toggle="modal"
+                        data-bs-target="#carritoModal">
+                            <i class="fa-solid fa-basket-shopping fs-3"></i>
+                            <span id="contadorCarrito"
+                                class="position-absolute top-0 start-100 translate-middle badge rounded-pill bg-danger">
+                                0
+                            </span>
+                        </button>
                     </ul>
                 </div>
             </div>
         </nav>
 
         <!--  HEADER CON IMAGEN -->
-        <header>
+        <header id="home">
             <div class="position-relative">
                 <img src="assets/img/fondo.jpg" class="img-fluid object-fit-cover w-100 blurred" style="height: 90vh; filter: blur(5px)" alt="Fondo">
 
@@ -58,7 +67,7 @@
                 </div>
             </div>
         </header>
-        <main class="bg-lateral">
+        <main class="bg-lateral" id="bobbas">
             <!-- MARQUEE -->
             <div class="marquee bg-pink border-0 p-1 pt-4">
                 <p class="fs-1 text-light bg-pink fst-italic text-uppercase">
@@ -67,7 +76,7 @@
             </div>
 
             <!-- CARRUSEL DE TARJETAS -->
-            <h2 id="carta" class="text-center my-4 display-5 fw-normal t-pink">Nuestros capybobbas</h2>
+            <h2  class="text-center my-4 display-5 fw-normal t-pink">Nuestros capybobbas</h2>
 
             <div id="carouselExampleControls" class="carousel slide container-carta" data-bs-ride="carousel">
                 <div class="carousel-inner">
@@ -83,7 +92,10 @@
                                     data-bs-content="Lorem ipsum dolor sit amet...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">Thai Boba tea</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('Thai Boba Tea', 3990)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -94,7 +106,10 @@
                                     data-bs-toggle="popover" data-bs-title="Ingredientes" data-bs-content="Lorem ipsum...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">Tarisimo</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('Tarisimo', 4590)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -105,7 +120,10 @@
                                     data-bs-toggle="popover" data-bs-title="Ingredientes" data-bs-content="Lorem ipsum...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">MatchaBobba</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('MatchaBobba', 3890)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -122,7 +140,10 @@
                                     <img src="assets/img/bobb4.png" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">Pie de limon</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('Pie de limon', 4990)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -132,7 +153,10 @@
                                     <img src="assets/img/bobb5.png" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">Cocoa Beach</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('Cocoa Beach', 3990)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -142,7 +166,10 @@
                                     <img src="assets/img/bobb6.png" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">Prestigio</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('Prestigio', 4590)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -159,7 +186,10 @@
                                     <img src="assets/img/bobb7.png" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">Chocomora</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('Chocomora', 3990)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -169,7 +199,10 @@
                                     <img src="assets/img/bobb8.png" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">Mokka</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('Mokka', 4290)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -179,7 +212,10 @@
                                     <img src="assets/img/bobb9.png" class="card-img-top" alt="...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title fs-3 t-pink">MatchaIntense</h5>
-                                        <a href="#" class="btn bg-green btn-outline-success fs-4">Comprar ahora!</a>
+                                        <a class="btn bg-green btn-outline-success fs-4"
+                                        onclick="agregarAlCarrito('MatchaIntense', 4590)">
+                                        Comprar ahora!
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -199,7 +235,7 @@
             </div>
 
                 <!-- SUCURSALES -->
-            <div >
+            <div id="sucursales">
                 <section class="container ">
                     <h2 class="text-center my-5 display-5 fw-normal t-pink">Sucursales</h2>
                     <div class="row gap-5 justify-content-evenly"> 
@@ -267,68 +303,58 @@
                     </div>
                 </section>
 
-                <section class="align-content-between">
+                <section class="align-content-between"  id="horarios">
                     <div class="container my-5">
                         <div class="row justify-content-between align-items-center gy-5">
 
                             <!-- COLUMNA DEL HORARIO -->
-                            <div class="col-12 col-md-6">
-                                <div class="card bord text-center border-0 p-4">
+                            <div class="col-12 col-md-6 d-flex">
+                                <div class="card border-0 p-4 text-center d-flex flex-column w-100">
 
-                                    <!-- Título responsivo -->
                                     <h3 class="t-pink fs-2 fs-md-3 fs-lg-1 mb-4">
                                         Horario de Atención
                                     </h3>
 
-                                    <ul class="list-group p-2">
+                                    <ul class="list-group flex-grow-1 d-flex flex-column justify-content-evenly">
 
-                                        <!-- Cada item con texto responsivo -->
-                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
-                                            Lunes
-                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        <li class="list-group-item border-0 d-flex justify-content-between fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Lunes <span class="fw-bold">09:00 – 22:00</span>
                                         </li>
 
-                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
-                                            Martes
-                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        <li class="list-group-item border-0 d-flex justify-content-between fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Martes <span class="fw-bold">09:00 – 22:00</span>
                                         </li>
 
-                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
-                                            Miércoles
-                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        <li class="list-group-item border-0 d-flex justify-content-between fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Miércoles <span class="fw-bold">09:00 – 22:00</span>
                                         </li>
 
-                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
-                                            Jueves
-                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        <li class="list-group-item border-0 d-flex justify-content-between fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Jueves <span class="fw-bold">09:00 – 22:00</span>
                                         </li>
 
-                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
-                                            Viernes
-                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">09:00 – 22:00</span>
+                                        <li class="list-group-item border-0 d-flex justify-content-between fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Viernes <span class="fw-bold">09:00 – 22:00</span>
                                         </li>
 
-                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
-                                            Sábado
-                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">10:00 – 01:00</span>
+                                        <li class="list-group-item border-0 d-flex justify-content-between fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Sábado <span class="fw-bold">10:00 – 01:00</span>
                                         </li>
 
-                                        <li class="list-group-item d-flex justify-content-between align-items-center border-0 py-3 fs-6 fs-md-5 fs-lg-4 t-pink">
-                                            Domingo
-                                            <span class="fw-bold fs-6 fs-md-5 fs-lg-4 t-pink">10:00 – 18:00</span>
+                                        <li class="list-group-item border-0 d-flex justify-content-between fs-6 fs-md-5 fs-lg-4 t-pink">
+                                            Domingo <span class="fw-bold">10:00 – 18:00</span>
                                         </li>
 
                                     </ul>
 
-                                    <!-- Botón responsivo -->
-                                    <button type="button" class="btn p-2 p-md-3 fs-6 fs-md-5 bg-green btn-outline-success mt-3"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                    <button type="button"
+                                        class="btn bg-green btn-outline-success mt-3"
+                                        data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal">
                                         Reserva tu hora
                                     </button>
-
                                 </div>
                             </div>
-
                             <!-- IMAGEN -->
                             <div class="d-none d-lg-block col-lg-6 text-center">
                                 <img 
@@ -422,7 +448,7 @@
                             <p><i class="fa-brands fa-instagram fa-2x"></i></p>
                             <p><i class="fa-brands fa-linkedin fa-2x"></i></p>
                             <p><i class="fa-solid fa-envelope fa-2x"></i></p>
-                        </div>
+                        </div> 
                     </div>
 
                 </div>
@@ -430,9 +456,37 @@
             </div>
         </footer>
 
-        <button id="btnTop" class=" rounded-circle shadow-lg bg-pink text-light">
-            ↑
-        </button>
+        <div class="modal fade" id="carritoModal" tabindex="-1">
+            <div class="modal-dialog modal-lg modal-dialog-centered modal-dialog-scrollable">
+                <div class="modal-content">
+
+                <div class="modal-header">
+                    <h5 class="modal-title t-pink">🛒 Tu carrito</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <div class="modal-body">
+                    <ul id="listaCarrito" class="list-group"></ul>
+                </div>
+
+                <div class="modal-footer justify-content-between">
+                    <h5>Total: $<span id="totalCarrito">0</span></h5>
+                    <button class="btn btn-secondary" data-bs-dismiss="modal">Seguir comprando</button>
+                    <button class="btn bg-green btn-outline-success">Comprar</button>
+                </div>
+
+                </div>
+            </div>
+        </div>
+
+        
+
+        <img 
+            id="btnTop"
+            src="assets/img/capi_up.png"
+            alt="Volver arriba"
+            role="button"
+        >
         
 
         <!-- SCRIPTS -->
